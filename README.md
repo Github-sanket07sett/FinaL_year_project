@@ -35,6 +35,56 @@ A smart petrol dispensing system using Arduino Mega, NodeMCU (ESP8266), RFID aut
 1.Integrate mobile app for users to recharge balance
 2. Add OTP-based confirmation before dispensing
 3. Introduce admin dashboard for monitoring fuel sales
+
+## Wiring Details
+### Arduino Mega 2560
+1. GND: Connected to GND of LCD, RFID, Relay, and ESP-8266.
+2. 5V: Connected to VCC of LCD and Relay.
+3. 3V3: Connected to VCC of RFID.
+4. D53: Connected to SDA of RFID.
+5. D52: Connected to SCK of RFID.
+6. D51: Connected to MOSI of RFID.
+7. D50: Connected to MISO of RFID.
+8. D9 PWM: Connected to RST of RFID.
+9. D11 PWM: Connected to IN of Relay.
+10. A0-A3: Connected to R1-R4 of Keypad.
+11. D7 PWM, D8 PWM, D4 PWM, D2 PWM: Connected to C1-C4 of Keypad.
+12. D20/SDA: Connected to SDA of LCD.
+13. D21/SCL: Connected to SCL of LCD.
+14. D19/RX1: Connected to D3 of ESP-8266.
+15. D18/TX1: Connected to pin2 of 2000 Ohm Resistor.
+### ESP-8266 Controller
+1. GND: Connected to GND of Arduino.
+2. D2: Connected to pin2 of 1000 Ohm Resistor.
+3. D3: Connected to D19/RX1 of Arduino.
+### RFID-RC522
+1. GND: Connected to GND of Arduino.
+2. VCC (3.3V): Connected to 3V3 of Arduino.
+3. SDA, SCK, MOSI, MISO, RST: Connected to respective pins on Arduino.
+### 1 Channel Relay 5V
+1. GND: Connected to GND of Arduino.
+2. VCC: Connected to 5V of Arduino.
+3. IN: Connected to D11 PWM of Arduino.
+4. NC: Connected to Positive (+) of Water Pump.
+5. COM: Connected to VCC of 12V Battery.
+### Mini Diaphragm Water Pump
+1. Positive (+): Connected to NC of Relay.
+2. Negative (-): Connected to GND of 12V Battery.
+### 12V Battery
+1. VCC: Connected to COM of Relay.
+2. GND: Connected to Negative (-) of Water Pump.
+### 4X4 Membrane Matrix Keypad
+1. R1-R4: Connected to A0-A3 of Arduino.
+2. C1-C4: Connected to D7 PWM, D8 PWM, D4 PWM, D2 PWM of Arduino.
+### LCD 16x2 attached i2c
+1. GND: Connected to GND of Arduino.
+2. VCC: Connected to 5V of Arduino.
+3. SDA: Connected to D20/SDA of Arduino.
+4. SCL: Connected to D21/SCL of Arduino.
+### Resistors
+1. 1000 Ohms: Connected between D2 of ESP-8266 and pin1 of 2000 Ohm Resistor.
+2. 2000 Ohms: Connected between pin2 of 1000 Ohm Resistor and D18/TX1 of Arduino.
+
 ## 🛠️ Requirements
 1. Arduino IDE 1.8+
 2. Libraries:
