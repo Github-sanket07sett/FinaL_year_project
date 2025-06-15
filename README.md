@@ -31,10 +31,6 @@ A smart petrol dispensing system using Arduino Mega, NodeMCU (ESP8266), RFID aut
 5. Flow sensor measures dispensed amount
 6. Firebase updates balance, dispensed amount, and timestamp
 
-## ✅ Future Enhancements
-1.Integrate mobile app for users to recharge balance
-2. Add OTP-based confirmation before dispensing
-3. Introduce admin dashboard for monitoring fuel sales
 
 ## Wiring Details
 ### Arduino Mega 2560
@@ -84,6 +80,16 @@ A smart petrol dispensing system using Arduino Mega, NodeMCU (ESP8266), RFID aut
 ### Resistors
 1. 1000 Ohms: Connected between D2 of ESP-8266 and pin1 of 2000 Ohm Resistor.
 2. 2000 Ohms: Connected between pin2 of 1000 Ohm Resistor and D18/TX1 of Arduino.
+## Block Diagram
+![DIAGRAM](https://github.com/user-attachments/assets/e089e80a-5879-41f7-8812-7657ee983df8)
+
+## Circuit Diagram
+![circuit_image (1)](https://github.com/user-attachments/assets/b86166c6-c3c1-4297-bece-cfec2d244672)
+## Flowchart
+![flowcahrt](https://github.com/user-attachments/assets/9a67e609-d545-4794-86b7-9c0d4a663246)
+## Project Architecture
+![image](https://github.com/user-attachments/assets/f27ebb89-6721-49eb-afe8-ff2c2a351c78)
+
 
 ## 🛠️ Requirements
 1. Arduino IDE 1.8+
