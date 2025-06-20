@@ -88,7 +88,7 @@ A smart petrol dispensing system using Arduino Mega, NodeMCU (ESP8266), RFID aut
 ## Flowchart
 ![flowcahrt](https://github.com/user-attachments/assets/9a67e609-d545-4794-86b7-9c0d4a663246)
 ## Project Architecture
-![image](https://github.com/user-attachments/assets/f27ebb89-6721-49eb-afe8-ff2c2a351c78)
+![image](https://github.com/user-attachments/assets/6b353e57-6835-40fc-9801-dbea92768ef2)
 
 
 ## 🛠️ Requirements
